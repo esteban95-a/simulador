@@ -10,3 +10,4 @@ function obtenerConsumo(){
   let consumo = lecturaactual1 - lecturaanterior1;
   return consumo;
 }
+function
