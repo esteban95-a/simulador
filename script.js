@@ -13,8 +13,8 @@ function obtenerConsumo(){
 function tarifabase(){
     let tarifadiaria = 0.15;
     let tarifamesual = 4.50;
-    let tarifabase = (tarifadiaria * 30) + tarifamesual;
-    return tarifabase;
+    let tarifabas = (tarifadiaria * 30) + tarifamesual;
+    return tarifabas;
 } 
 let obtenercargofijo = function(){
     let tarifaadministrativa = 1500;
@@ -39,3 +39,11 @@ let calcularvaloriva = () => {
     let ttal = sbtotal * iva2 / 100;
     return ttal;
 }
+let calcularTotalPagar = () => {
+    let subtotalfinal = calcularsubtotal();
+    let ivafinal = calcularvaloriva();
+    let cargofinal = obtenercargofijo();
+    let totalpagar = subtotalfinal + ivafinal + cargofinal;
+    return totalpagar;
+}
+
