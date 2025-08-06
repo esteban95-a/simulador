@@ -27,3 +27,9 @@ let valoriva = function(){
     let iva = base * 0.19;
     return iva;
 }
+let calcularsubtotal = () => {
+    let consumosubtotal = obtenerConsumo();
+    let tarifa = tarifabase();
+    let subtotal = consumosubtotal * tarifa;
+    return subtotal;
+}   
