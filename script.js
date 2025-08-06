@@ -22,3 +22,8 @@ let obtenercargofijo = function(){
     let cargofijo = tarifaadministrativa + costomantenimiento;
     return cargofijo;
 }
+let valoriva = function(){
+    let base = 10;
+    let iva = base * 0.19;
+    return iva;
+}
