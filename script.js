@@ -46,4 +46,14 @@ let calcularTotalPagar = () => {
     let totalpagar = subtotalfinal + ivafinal + cargofinal;
     return totalpagar;
 }
-
+function mostrarFactura(){
+    console.log("Nombre del Cliente: " + nombreCliente());
+    console.log("Número de Cliente: " + numeroCliente());
+    console.log("Consumo (kWh): " + obtenerConsumo() + " kWh");
+    console.log("Tarifa Base: $" + tarifabase().toFixed(2));
+    console.log("Cargo Fijo: $" + obtenercargofijo().toFixed(2));
+    console.log("Subtotal: $" + calcularsubtotal().toFixed(2));
+    console.log("IVA: $" + calcularvaloriva().toFixed(2));
+    console.log("Total a Pagar: $" + calcularTotalPagar().toFixed(2));
+}
+mostrarFactura();
