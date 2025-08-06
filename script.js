@@ -33,3 +33,9 @@ let calcularsubtotal = () => {
     let subtotal = consumosubtotal * tarifa;
     return subtotal;
 }   
+let calcularvaloriva = () => {
+    let sbtotal = calcularsubtotal();
+    let iva2 = valoriva();
+    let ttal = sbtotal * iva2 / 100;
+    return ttal;
+}
