@@ -10,4 +10,9 @@ function obtenerConsumo(){
   let consumo = lecturaactual1 - lecturaanterior1;
   return consumo;
 }
-function
+function tarifabase(){
+    let tarifadiaria = 0.15;
+    let tarifamesual = 4.50;
+    let tarifabase = (tarifadiaria * 30) + tarifamesual;
+    return tarifabase;
+} 
