@@ -16,3 +16,9 @@ function tarifabase(){
     let tarifabase = (tarifadiaria * 30) + tarifamesual;
     return tarifabase;
 } 
+let obtenercargofijo = function(){
+    let tarifaadministrativa = 1500;
+    let costomantenimiento = 2000;
+    let cargofijo = tarifaadministrativa + costomantenimiento;
+    return cargofijo;
+}
